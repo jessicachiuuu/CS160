@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/from_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/from_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/from_label"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/to_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:layout_below="@+id/from_label"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/to_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/to_label"
+            android:layout_below="@+id/from_language"
+            android:layout_marginTop="100dp" />
+
+        <Spinner
+            android:id="@+id/phrase_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/to_language"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="100sp"
+            android:layout_below="@+id/phrase_choice"
+            android:layout_marginTop="200dp"
+            android:text="@string/answer"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/translate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button"
+            android:layout_below="@+id/answer"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:onClick="onClick" />
+
+</RelativeLayout>
